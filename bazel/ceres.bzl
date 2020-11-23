@@ -182,6 +182,7 @@ def ceres_library(name,
         copts = [
             "-I" + internal,
             "-Wno-sign-compare",
+            "-std=c++14"
         ] + schur_eliminator_copts,
 
         # These include directories and defines are propagated to other targets
