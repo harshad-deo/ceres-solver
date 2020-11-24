@@ -35,7 +35,7 @@ load("//:bazel/ceres.bzl", "ceres_library")
 
 filegroup(
     name = "hdrs",
-    srcs = glob(["include/**"]),
+    srcs = glob(["include/**"]) + glob(["config/**"]),
     visibility = ["//visibility:public"]
 )
 
